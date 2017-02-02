@@ -1,0 +1,46 @@
+.button
+  position: relative
+  z-index: 2
+  display: inline-block
+  padding: 2rem 5.4rem
+  border: 0.4rem solid #fff
+  overflow: hidden
+  font-family: "GothamProMedium", sans-serif
+  font-size: 2.4rem
+  color: #fff
+  line-height: .9
+  letter-spacing: 1.8px
+  text-transform: uppercase
+  background-color: rgba(122,20,0,.1)
+
+  @media only screen and (max-width:680px)
+    font-size: 1.1rem
+    padding: 0.9rem 2rem
+    border: 0.2rem solid #fff
+
+  &:after
+    content: ''
+    position: absolute
+    z-index: -1
+    display: block
+    top: 0
+    left: 0
+    right: -1rem
+    bottom: 0
+    background-color: #fff
+    transform: scaleY(0)
+    transition-property: all;
+    transition-timing-function: ease-out;
+    transform-origin: 50% 100%;
+    transition-duration: 0.3s;
+  &:hover
+    text-decoration: none
+    color: $accent-color
+    &:after
+      transform: scaleY(1)
+
+.button_about-text
+  @media only screen and (max-width:680px)
+    position: absolute
+    bottom: 0 
+    right: -12.5rem

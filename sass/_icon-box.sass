@@ -1,0 +1,60 @@
+.icon-box
+  width: 53rem
+  margin-bottom: 7rem
+
+  @media only screen and (max-width:680px)
+    width: 100%
+    margin-top: 13.8rem
+    // padding-right: 0.5rem
+
+
+.icon-box__box
+  display: inline-block
+  width: calc(100%/3)
+  padding: 0 2rem
+  text-align: center
+  vertical-align: top
+  &:first-child
+    padding-left: 0
+  &:last-child
+    padding-right: 0
+  @media only screen and (max-width:680px)
+    padding: 0
+
+
+.icon-box__image
+  display: block
+  margin: 0 auto
+  width: 12.6rem
+  height: 12.6rem
+  background-color: #FFF
+  border-radius: 50%
+  background-image: url("../img/icon_head.png")
+  background-repeat: no-repeat
+  background-size: 236% 65%
+  &_photo
+    background-position: -8% 47%
+    // @media only screen and (max-width:1560px)
+    //   background-position: -4% 41%
+  &_like
+    background-position: 48% 53%
+    // @media only screen and (max-width:1560px)
+    //   background-position: 48% 53%
+  &_price
+    background-position: 106% 47%
+    // @media only screen and (max-width:1560px)
+    //   background-position: 101% 47%
+
+  @media only screen and (max-width:780px)
+    background-size: 237% 65%
+  @media only screen and (max-width:680px)
+    background-size: 236% 65%
+    width: 6.4rem
+    height: 6.4rem
+
+.icon-box__text
+  font-size: 1.8rem
+  line-height: 2.3rem
+  @media only screen and (max-width:680px)
+    font-size: 1.15rem
+    line-height: 1.4rem

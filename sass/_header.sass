@@ -1,0 +1,58 @@
+.header
+  padding-left: 8rem
+  padding-top: 7.4rem
+  padding-bottom: 5.5rem
+  background-image: url("../img/head_bg.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: bottom right
+
+  @media only screen and (max-width:680px)
+    width: 100%
+    margin-top: 78px
+    padding: 0.5rem 1rem 43rem 1rem
+    background-image: url("../img/mobile_heade.jpg")
+
+
+.header__title 
+  color: $accent-color
+  width: 30rem
+  line-height: 5.4rem
+
+  @media only screen and (max-width:1100px)
+    line-height: 6.6rem
+
+  @media only screen and (max-width:680px)
+    margin: -30.8rem auto auto
+    width: 13rem
+    line-height: 2.9rem
+    
+
+.header__title_text 
+  line-height: 0.45
+
+  &_medium
+    font-family: "GothamProMedium", sans-serif
+    font-size: 9.9rem
+    letter-spacing: 0.18rem
+    text-transform: uppercase
+    @media only screen and (max-width:680px)
+      font-size: 4.2rem
+
+  &_light
+    font-family: "GothamProLight", sans-serif
+    font-size: 5.6rem
+    letter-spacing: 0.18rem
+    text-transform: uppercase
+    @media only screen and (max-width:680px)
+      font-size: 2.4rem
+
+  &_black
+    font-family: "GothamProBlack", sans-serif
+    font-size: 8.8rem
+    letter-spacing: 0.05rem
+    @media only screen and (max-width:680px)
+      font-size: 3.5rem
+      // line-height: 0.09rem
+      letter-spacing: 0.2rem
+

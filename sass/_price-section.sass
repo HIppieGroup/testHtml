@@ -1,0 +1,89 @@
+.price__image
+  overflow: hidden
+  position: relative
+  &:hover .img-zoom
+    transform: scale(1.02,1.02)
+
+.price__text 
+  position: relative
+  padding-top: 11rem
+  padding-right: 9rem
+  padding-bottom: 9.9rem
+  background-color: #f62200
+  color: #fff
+  z-index: 1
+
+  @media only screen and (max-width:680px)
+    padding-top: 4rem
+    padding-right: 0
+  &:after
+    content: ''
+    position: absolute
+    z-index: 1
+    right: -4.7rem
+    top: calc(50% - 155px)
+    @include triangle(101px 51px, #f62200, right);
+    @media only screen and (max-width:1560px)
+      top: 20rem
+    @media only screen and (max-width:680px)
+      left: calc(50% - 23px)
+      top: inherit
+      bottom: -0.1rem
+      @include triangle(50px 25px, #226dca, up)
+    
+
+.price-text-box__head
+  position: relative
+  margin: 6rem 0 7.7rem 24rem
+  font-family: "GothamProBold", sans-serif
+  font-size: 6rem
+  line-height: 6.4rem
+
+  @media only screen and (max-width:680px)
+    font-size: 2.8rem
+    line-height: 3.2rem
+    margin: 0
+    padding-left: 0.3rem
+
+  &:after
+    content: ''
+    position: absolute
+    display: block
+    top: -7rem
+    right: 103%
+    width: 27.2rem
+    height: 30rem
+    background-image: url("../img/lays_pack.png")
+    background-repeat: no-repeat
+    @media only screen and (max-width:1560px)
+      background-size: cover
+      top: -7rem 
+      width: 27.6rem
+      height: 27.6rem
+    @media only screen and (max-width:680px)
+      top: 5.3rem
+      right: 10%
+      width: 10.6rem
+      height: 12.2rem
+
+.price-text-box__button
+  padding: 2rem 3.8rem
+  @media only screen and (max-width:680px)
+    position: relative
+    left: 46%
+    transform: translateX(-50%)
+
+    padding: 0.9rem 1.2rem
+
+.price-text-box__description
+  font-size: 2rem
+  line-height: 2.8rem
+  margin-bottom: 4.6rem
+
+  @media only screen and (max-width:680px)
+    width: 13.8rem
+    padding-left: 0.3rem
+    margin-top: 2rem
+    margin-bottom: 3.6rem
+    font-size: 1.2rem
+    line-height: 1.6rem

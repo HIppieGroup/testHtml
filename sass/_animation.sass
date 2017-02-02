@@ -1,0 +1,58 @@
+.right-box
+  @media only screen and (min-width: 900px)
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0
+.left-box
+  @media only screen and (min-width: 900px)
+    transform: translate3d(100%, 0, 0);
+    opacity: 0
+
+.animation_from-right
+  @media only screen and (min-width: 680px)
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+    animation: from-right .8s
+
+.animation_from-left
+  @media only screen and (min-width: 680px)
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+    animation: from-left .8s
+
+@keyframes from-right
+  0%
+    transform: translate3d(100%, 0, 0);
+    opacity: 0
+  100%
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+@keyframes from-left
+  0%
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0
+  100%
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+
+
+.animation-blink
+  animation: blink 1.6s 
+
+@keyframes blink 
+  0%
+    transform : scale(0,0)
+  50%
+    transform : scale(0,0)
+  100%
+    transform : scale(1,1)
+
+.animation-blink-opacity
+  animation: blink-opacity 1.6s 0.2s
+
+@keyframes blink-opacity
+  0%
+    opacity: 0
+  50%
+    opacity: 0
+  100%
+    opacity: 1

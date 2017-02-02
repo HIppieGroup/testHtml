@@ -1,0 +1,157 @@
+.about-section__interactive-about
+  padding-top: 5rem
+  padding-bottom: 9rem
+  background-image: url("../img/girl_bg.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: bottom right
+
+  @media only screen and (max-width:680px)
+    background-image: url("../img/mobile_girl.jpg")
+  @media only screen and (max-width:320px)
+    padding-top: 3rem
+
+.about-text
+  position: relative
+  width: 28.2rem
+
+  @media only screen and (max-width:680px)
+    width: 13.5rem
+
+.about-text__social-box
+  height: 23rem
+  width: 100%
+  @media only screen and (max-width:680px)
+    height: 11.8rem
+
+.about-text__social-button
+  position: absolute
+  display: block
+  background-color: #FFF
+  background-image: url("../img/social.png")
+  background-repeat: no-repeat
+  background-size: 285% 69%
+  box-shadow: 5px 0 9px rgba(180,127,26,.2)
+  transition: ease-in-out .4s all
+  @media only screen and (max-width:680px)
+    background-size: 279% 70%
+  &:hover
+    background-color: #fdf604
+
+.about-text__social-button_face
+  z-index: 1
+  top: 5.7rem
+  left: -2.4rem
+  width: 10.2rem
+  height: 10.2rem
+  background-position: -2% 50%
+  transform: rotate(-40deg)
+
+  @media only screen and (max-width:680px)
+    display: none
+
+
+.about-text__social-button_vk
+  z-index: 2
+  top: -0.5rem
+  left: 7.4rem
+  width: 11rem
+  height: 11rem
+  background-position: 50% 50%
+  transform: rotate(8deg)
+
+  @media only screen and (max-width:680px)
+    top: 0.8rem
+    left: 0.3rem
+    width: 5.8rem
+    height: 5.8rem
+    transform: rotate(-27deg)
+
+
+.about-text__social-button_inst
+  z-index: 1
+  top: 9.7rem
+  left: 14.3rem
+  width: 8.9rem
+  height: 8.9rem
+  background-position: 102% 50%
+  transform: rotate(30deg)
+
+  @media only screen and (max-width:680px)
+    top: 2.7rem
+    left: 7rem
+    width: 4.4rem
+    height: 4.4rem
+    transform: rotate(25deg)
+
+.about-text__head
+  position: relative
+  margin: 0
+  padding: 0 1rem
+  font-family: "GothamProBold", sans-serif
+  font-size: 4.4rem
+  line-height: 5.7rem
+
+  @media only screen and (max-width:680px)
+    font-size: 1.9rem
+    line-height: 2.8rem
+    padding: 0 0.7rem
+
+  &:after
+    content: ''
+    position: absolute
+    top: -7.4rem
+    left: 8rem
+    width: 6rem
+    height: 6.6rem
+    background-image: url("../img/arow.png")
+    background-repeat: no-repeat
+    background-size: 95% 100%
+    background-position: 0 0
+    @media only screen and (max-width:680px)
+      background-size: cover
+      top: -4.3rem;
+      left: 4.5rem;
+      width: 2.8rem;
+      height: 3.6rem;
+  
+.about-text__heshtag
+  display: block
+  margin-bottom: 4rem
+  margin-top: 0
+  padding: 1.7rem 1rem 0
+  background-color: #FFF
+  font-size: 4.4rem
+  line-height: 1
+
+  @media only screen and (max-width:680px)
+    padding: 0.4rem 0.5rem 
+    font-size: 2rem
+
+
+
+.about-section__image-about
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  padding:  2.6rem 1.6rem 2.6rem 2.4rem
+  background-color: #FFF
+  @media only screen and (max-width:1500px)
+    padding:  2.6rem 1.6rem 2.6rem 2.6rem
+  @media only screen and (max-width:680px)
+    padding: 1.3rem
+
+.about-section__image-box
+  float: left
+  flex: 1 1 33.3%
+  padding: 0.5rem
+  width: 33.3%
+  height: 33.3%
+  overflow: hidden
+
+  @media only screen and (max-width:680px)
+    width: 9.8rem
+    height: 9.8rem
+    padding: 0.2rem
+  &:hover .img-zoom
+    transform: scale(1.1,1.1)

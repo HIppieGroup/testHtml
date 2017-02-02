@@ -1,0 +1,187 @@
+.navigation
+  position: fixed
+  top: 0
+  width: $nav-w
+  height: 100%
+  text-align: center
+  background-color: #FFF
+  @media only screen and (max-width:1000px)
+    width: 110px
+  @media only screen and (max-width:680px)
+    z-index: 99
+    width: 100%
+    height: 78px
+    padding: 0 20px
+    text-align: left
+  &:before
+    @media only screen and (max-width:680px)
+      content: ''
+      position: absolute
+      z-index: -1
+      display: block
+      bottom: 0
+      left: 0
+      width: 100% 
+      height: 100%
+      background-color: #fff
+
+.nav-logo
+  display: block
+  &:hover
+    text-decoration: none
+  @media only screen and (max-width:680px)
+    display: inline-block
+    position: relative
+
+.nav-mobile
+  display: none
+  float: right
+  margin-top: 22px
+  @media only screen and (max-width:680px)
+    display: block
+    
+
+.nav-mobile-button
+  position: relative
+  display: inline-block
+  width: 40px
+  height: 5px
+  background-color: $accent-color
+  transition: ease-in-out .5s all
+  &:after
+    content: ''
+    position: absolute
+    display: block
+    width: 40px
+    height: 5px
+    top: 10px
+    left: 0
+    background-color: $accent-color
+    transition: ease-in-out .2s all
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    width: 40px
+    height: 5px
+    top: -10px
+    left: 0
+    opacity: 1
+    background-color: $accent-color
+    transition: ease-in-out .4s all
+  
+  
+
+.nav-mobile_open
+  transform: rotate(40deg)
+  &:after
+    transform-origin: 36% -50%
+    transform: rotate(-80deg)
+  &:before 
+    opacity: 0
+    
+
+.nav-logo__image
+  display: block
+  margin: 25px auto 0
+  width: 97px
+  height: 85px
+  background-image: url("../img/logo_lays.png")
+  background-repeat: no-repeat
+  @media only screen and (max-width:680px)
+    display: inline-block
+    background-size: cover
+    vertical-align: middle
+    margin-top: 0
+    margin-right: 10px
+    width: 55px
+    height: 46px
+
+
+.nav-logo__title
+  font-family: "GothamProMedium", sans-serif
+  font-size: 16px
+  color: $accent-color
+  @media only screen and (max-width:680px)
+    position: relative
+    left: 50%
+    transform: translateX(-100%);
+    display: inline-block
+    vertical-align: middle
+    font-size: 18px
+    letter-spacing: .9px
+    line-height: 37px
+
+
+.nav-list
+  list-style: none
+  padding-left: 0
+  position: relative
+  margin-top: 52px
+  @media only screen and (max-width:680px)
+    position: absolute
+    z-index: -2
+    left: 0 
+    right: 0
+    top: -400%
+    margin: 0
+    background-color: #FFF
+    transition: ease-in-out .5s all
+  
+      
+
+
+.nav-list_open  
+  transition: ease-in-out .5s all
+  top: 100%
+
+.nav-list__item
+  display: block
+  padding: 20px 0
+  font-size: 14px
+  color: #555555
+  transition: ease-in-out 0.4s all
+  &:hover
+    text-decoration: none
+    background-color: #fedd58
+    color: #301f20
+  @media only screen and (max-width:680px)
+    border-bottom: 1px solid rgb(251, 197, 6)
+    font-size: 16px
+    color: #333
+    vertical-align: middle
+
+
+.nav-list__icon
+  display: block
+  height: 53px
+  width: 60px
+  margin: auto
+  margin-bottom: 8px
+  background-image: url("../img/icon_nav.png")
+  background-repeat: no-repeat
+  &_photo
+    background-position: -9px -10px
+  &_about
+    background-position: -9px -93px
+  &_map
+    background-position: -9px -173px
+
+  @media only screen and (max-width:680px)
+    display: inline-block
+    margin-left: 15px
+    margin-right: 10px
+    vertical-align: middle
+
+
+
+
+
+
+
+
+
+
+
+
+

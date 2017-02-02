@@ -1,0 +1,55 @@
+.map__text
+  position: relative
+  text-align: center
+  padding: 6.5rem 3.5rem 6.6rem
+  background-image: url("../img/mat_map.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  &:hover .img-zoom
+    transform: scale(1.01,1.01)
+  &:after
+    content: ''
+    position: absolute
+    z-index: 1
+    left: -4.9rem
+    top: calc(50% - 22px)
+    @include triangle(101px 51px, #fece00, left)
+
+    @media only screen and (max-width:680px)   
+      left: calc(50% - 23px)
+      top: inherit
+      bottom: -0.1rem
+      @include triangle(50px 25px, #b5d7f0, up)
+
+  @media only screen and (max-width:680px)
+    margin-top: -201%
+    padding: 2.4rem 2.4rem 0
+
+.map__image
+  overflow: hidden
+  position: relative
+  &:hover .img-zoom
+    transform: scale(1.01,1.01)
+  @media only screen and (max-width:680px)
+    margin-top: 101%
+
+
+
+.map-text-box__head
+  position: relative
+  margin-top: 2.5rem
+  margin-bottom: 3rem
+  font-family: "GothamProBold", sans-serif
+  font-size: 6.7rem
+  line-height: 1.1
+  color: #301f20
+  @media only screen and (max-width:1560px)
+    margin-top: 3.1rem
+    font-size: 6.3rem
+    margin-bottom: 3.5rem
+
+  @media only screen and (max-width:680px)
+    font-size: 2.9rem
+    margin-top: 0.7rem
+    margin-bottom: 1.1rem
+ 
