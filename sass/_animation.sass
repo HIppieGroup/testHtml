@@ -21,14 +21,14 @@
 
 @keyframes from-right
   0%
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(40%, 0, 0);
     opacity: 0
   100%
     transform: translate3d(0, 0, 0);
     opacity: 1
 @keyframes from-left
   0%
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-40%, 0, 0);
     opacity: 0
   100%
     transform: translate3d(0, 0, 0);
@@ -36,8 +36,10 @@
 
 
 .animation-blink
-  animation: blink 1.6s 
-
+  opacity: 0
+  animation-name: blink 
+  animation-duration: 1.6s 
+  animation-fill-mode: both
 @keyframes blink 
   0%
     transform : scale(0,0)
@@ -45,9 +47,10 @@
     transform : scale(0,0)
   100%
     transform : scale(1,1)
+    opacity: 1
 
 .animation-blink-opacity
-  animation: blink-opacity 1.6s 0.2s
+  animation: blink-opacity 2.8s
 
 @keyframes blink-opacity
   0%
