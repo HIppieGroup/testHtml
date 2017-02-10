@@ -9,7 +9,9 @@ a
   
 html
   font-size: 10px
-  @media only screen and (max-width:1560px)
+  @media only screen and (min-width:1600px)
+    font-size: 13px
+  @media only screen and (max-width:1550px)
     font-size: 8.9px
   @media only screen and (max-width:1390px)
     font-size: 7.9px
@@ -52,7 +54,7 @@ html
  color: $accent-color
 
 .wrapper
-  max-width: 1560px 
+  // max-width: 1560px 
   margin: auto
   position: relative
   @media only screen and (max-width:680px)
@@ -60,11 +62,12 @@ html
     
 
 .page
-  max-width: 1560px - $nav-w
+  
   float: left
   margin-left: $nav-w
   background-color: #ffde00
   overflow: hidden
+  @include respond-to(1560px) {max-width: 1560px - $nav-w;}
   @include respond-to(1500px) {max-width: 1400px - $nav-w;}
   @media only screen and (max-width:1000px)
     max-width: calc(1400px - 110px)

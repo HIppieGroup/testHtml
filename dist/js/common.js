@@ -91,7 +91,7 @@ window.onresize = function(event) {
 };
 
 function resize(){
-  if (window.innerWidth <= 1560 && window.innerWidth > 680) {
+  if (window.innerWidth > 680) {
 
     for (var i = section.length - 1; i >= 0; i--) {
       section[i].style.height = ' '+page.offsetWidth / 1.9297+'px';
